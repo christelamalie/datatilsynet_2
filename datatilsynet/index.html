@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatilsynet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+        <!-- EmailJS config --> 
+        <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("CEkVVTSAKLLsxkGMU");
+        })();
+      </script>
+</head>
+<body>
+    <section class="front">
+
+    <header class="menu">   
+        <div class="nav">
+          <div class="topnav" id="myTopnav">
+            <a href="#home" class="active"><img class="img-fluid logo" src="image/dat-logo.png" alt="logo"></a>
+            <a href="spørgeskema.html" target="_blank" class="survey" >Spørgeskema</a>
+            <a href="#datatilsynet">Datatilsynet</a>
+            <a href="#sikkerhed">Din Sikkerhed</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+    </header>
+    <!--datatilsynet-->
+    <div class="container box1">
+            <div class="tekst"> <h1>Hjælp Datatilsynet med at hjælpe dig</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iste blanditiis obcaecati laudantium iure odit natus sint repellat voluptates sit nisi facilis aperiam, et similique autem rerum. Vero nemo similique consectetur unde sit a temporibus? Nihil non at, itaque impedit cupiditate maxime modi delectus laudantium nulla nesciunt, provident quod illo?</p> 
+            </div>
+            <button><a href="spørgeskema.html" target="_blank" >Spørgeskema</a></button>
+    </div>
+
+  </section>
+
+<div class="row_1_2 flex">
+  <div class="row_1 flex"><img src="/image/ansigt.png" alt="person">
+  <div class="column"> <h3>Gå i dybden med vores spørgeskema her!</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iste blanditiis obcaecati laudantium iure odit natus sint repellat voluptates sit nisi facilis aperiam, et similique autem rerum. Vero nemo similique consectetur unde sit a temporibus? Nihil non at, itaque impedit cupiditate maxime modi delectus laudantium nulla nesciunt, provident quod illo?</p>
+ </div> 
+ </div>
+</div>
+ <!--datatilsynet-->
+
+    <div id="root">
+      <div class="bg-image">
+    <form id="contact-form">
+      <div class="containeren">
+        <label for="name"><h3>Navn:</h3></label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          class="need-validation"
+        />
+        <span class="error-message">Udfyld dit fulde navn</span>
+
+        <label> <h3>Email: </h3></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          class="need-validation"
+        />
+
+        <label> <h3>Skriv dit spørgsmål her!</h3></label>
+        <textarea
+          required
+          name="message"
+          rows="8"
+          cols="50"
+          class="need-validation"
+        ></textarea>
+
+        <input class="knap" type="submit" />
+      </div>
+    </form>
+    
+    <script src="script.js"></script>
+  </div>
+ </div>    
+</body>
+</html>
